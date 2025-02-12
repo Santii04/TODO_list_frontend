@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Task from "../components/Task/task";
 
 export default function Home() {
     const [done, setDone] = useState({})
@@ -8,8 +9,9 @@ export default function Home() {
     }
     // Handle UseEffect
 
-    return <main className="w-full">
-        <h1>Holi</h1>
-    </main>
+    return (
+    <main className="w-screen px-40">
+        <Task> </Task>
+    </main>)
 }
 
